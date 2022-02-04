@@ -1,0 +1,9 @@
+<div class="smestaj">
+    <p>{{smestaj.naziv}}</p>
+    <p>{{smestaj.lokacija}}</p>
+    <p>{{smestaj.cena}} din</p>
+    <p>Sobe apartmana:</p>
+    <ul>
+        <li *ngFor="let soba of smestaj.sobe">{{soba.tip}} -- {{soba.kvadratura}}m2</li>
+    </ul>
+</div>
